@@ -3,6 +3,7 @@
     padding: var(--spacing-200);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--color-blue-900);
   }
   .logo img {

@@ -5,6 +5,9 @@ import BaseLayout from '../layouts/BaseLayout';
 import HomePage from '../pages/HomePage';
 import Login from '../pages/Login';
 import SignUp from '../pages/SignUp';
+import MoviesPage from '../pages/MoviesPage';
+import Bookmarks from '../pages/Bookmarks';
+import Series from '../pages/Series';
 
 export const router = createBrowserRouter([
   {
@@ -17,6 +20,18 @@ export const router = createBrowserRouter([
           {
             index: true,
             element: <HomePage />,
+          },
+          {
+            path: 'bookmarks',
+            element: <Bookmarks />,
+          },
+          {
+            path: 'movies',
+            element: <MoviesPage />,
+          },
+          {
+            path: 'series',
+            element: <Series />,
           },
         ],
       },

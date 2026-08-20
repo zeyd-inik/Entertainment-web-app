@@ -1,5 +1,33 @@
 @scope (.SearchBar) {
-  :scope {
+  display: flex;
+  padding: 24px 0;
 
+  :scope {
+    .icon {
+      color: var(--color-white);
+      font-size: 24px;
+    }
+    .text_input {
+      flex: 1;
+      background-color: var(--color-blue-950);
+      border: 1px solid var(--color-blue-950);
+      margin-left: var(--spacing-200);
+      color: var(--color-white);
+      caret-color: var(--color-red-500);
+
+      &[placeholder] {
+        font-family: var(--font-family-base);
+        font-size: 16px;
+        font-weight: var(--font-weight-light);
+        line-height: var(--line-height-base);
+        letter-spacing: 0px;
+
+        padding-bottom: 8.5px;
+      }
+      &:focus {
+        border-bottom: 1px solid var(--color-blue-500);
+        outline: none;
+      }
+    }
   }
 }

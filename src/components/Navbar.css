@@ -1,4 +1,18 @@
 @scope (.Navbar) {
   :scope {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    .icon {
+      color: var(--color-blue-500);
+      font-size: 16px;
+
+      &.active {
+        color: var(--color-white);
+      }
+    }
+    .bookmark {
+      font-size: 13.54px;
+    }
   }
 }

@@ -7,8 +7,10 @@ export default function BaseLayout() {
   return (
     <div className="BaseLayout">
       <Header />
-      <SearchBar />
-      <Outlet />
+      <main>
+        <SearchBar />
+        <Outlet />
+      </main>
     </div>
   );
 }

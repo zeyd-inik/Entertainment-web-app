@@ -1,0 +1,25 @@
+@scope (.Slider) {
+  :scope {
+    h2 {
+      color: var(--color-white);
+    }
+
+    .slider_container {
+      display: flex;
+      gap: var(--spacing-200);
+      padding-top: var(--spacing-200);
+
+      /* Yatay kaydırma */
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      /* Scrollbar gizle (mobil görünüm) */
+      scrollbar-width: none; /* Firefox */
+      -ms-overflow-style: none; /* IE/Edge */
+    }
+
+    .slider_container::-webkit-scrollbar {
+      display: none; /* Chrome/Safari */
+    }
+  }
+}
