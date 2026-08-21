@@ -1,0 +1,44 @@
+@scope (.GridCard) {
+  color: var(--color-white);
+
+  :scope {
+    .thumbnail {
+      background-image: url(../assets/thumbnails/1998/regular/small.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      aspect-ratio: 164 / 110;
+      border-radius: 6px;
+      position: relative;
+    }
+    .bookmark {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      background-color: black;
+      opacity: 0.4;
+      border-radius: 50%;
+      top: var(--spacing-100);
+      right: var(--spacing-100);
+      width: 32px;
+      height: 32px;
+    }
+
+    .top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 0;
+    }
+    .info {
+      color: var(--color-white);
+    }
+
+    .content_type_container {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+}

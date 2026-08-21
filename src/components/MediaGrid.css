@@ -1,5 +1,13 @@
 @scope (.MediaGrid) {
   :scope {
-
+    .title {
+      padding: 12px 0;
+      color: var(--color-white);
+    }
+    .grid_container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
   }
 }
