@@ -3,11 +3,32 @@
     .title {
       padding: 12px 0;
       color: var(--color-white);
+      font-family: var(--font-family-base);
+      font-size: 20px;
+      font-weight: var(--font-weight-light);
+      line-height: var(--line-height-base);
+      letter-spacing: -0.3px;
+
+      @media (min-width: 768px) {
+        font-size: 32px;
+        letter-spacing: -0.5px;
+      }
     }
+
     .grid_container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 15px;
+
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+
+      @media (min-width: 1440px) {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px 16px;
+      }
     }
   }
 }

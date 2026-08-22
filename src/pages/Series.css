@@ -1,5 +1,13 @@
 @scope (.Series) {
   :scope {
+    padding-top: var(--spacing-100);
 
+    @media (min-width: 768px) {
+      padding-top: var(--spacing-200);
+    }
+
+    @media (min-width: 1440px) {
+      padding-top: var(--spacing-300);
+    }
   }
 }

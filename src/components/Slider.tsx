@@ -4,7 +4,7 @@ import './Slider.css';
 export default function Slider() {
   return (
     <div className="Slider">
-      <h2 className=" text-preset-1 ">Trending</h2>
+      <h2>Trending</h2>
       <div className="slider_container">
         <MediaCard />
         <MediaCard />

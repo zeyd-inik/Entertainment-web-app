@@ -2,24 +2,40 @@
   :scope {
     h2 {
       color: var(--color-white);
+      font-family: var(--font-family-base);
+      font-size: 20px;
+      font-weight: var(--font-weight-light);
+      line-height: var(--line-height-base);
+      letter-spacing: -0.3px;
+
+      @media (min-width: 768px) {
+        font-size: 32px;
+        letter-spacing: -0.5px;
+      }
     }
 
     .slider_container {
       display: flex;
       gap: var(--spacing-200);
       padding-top: var(--spacing-200);
-
-      /* Yatay kaydırma */
       overflow-x: auto;
       overflow-y: hidden;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
 
-      /* Scrollbar gizle (mobil görünüm) */
-      scrollbar-width: none; /* Firefox */
-      -ms-overflow-style: none; /* IE/Edge */
+      @media (min-width: 768px) {
+        overflow-x: visible;
+        gap: var(--spacing-400);
+        padding-top: var(--spacing-300);
+      }
+
+      @media (min-width: 1440px) {
+        gap: var(--spacing-500);
+      }
     }
 
     .slider_container::-webkit-scrollbar {
-      display: none; /* Chrome/Safari */
+      display: none;
     }
   }
 }

@@ -1,5 +1,15 @@
 @scope (.HomePage) {
   :scope {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
 
+    @media (min-width: 768px) {
+      gap: var(--spacing-500);
+    }
+
+    @media (min-width: 1440px) {
+      gap: var(--spacing-700);
+    }
   }
 }

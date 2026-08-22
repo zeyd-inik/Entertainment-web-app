@@ -1,5 +1,20 @@
 @scope (.AuthLayout) {
-  :scope {
+  background-color: var(--color-blue-950);
+  min-height: 100vh;
 
+  :scope {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-300) var(--spacing-200);
+
+    @media (min-width: 768px) {
+      padding: var(--spacing-500);
+    }
+
+    @media (min-width: 1440px) {
+      padding: var(--spacing-700);
+    }
   }
 }

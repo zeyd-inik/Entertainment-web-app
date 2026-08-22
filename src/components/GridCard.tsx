@@ -6,12 +6,13 @@ export default function GridCard() {
   return (
     <div className="GridCard">
       <div className="thumbnail">
+        {/*  <div className="fade"></div> */}
         <i className="bookmark">
           <FaRegBookmark className="icon" />
         </i>
       </div>
       <div className="info">
-        <div className="top text-preset-5 ">
+        <div className="top">
           <span className="year">2019</span>
           <span className="bullet">&#8226;</span>
           <span className="content_type_container">
@@ -21,7 +22,7 @@ export default function GridCard() {
           <span className="bullet">&#8226;</span>
           <span className="category">PG</span>
         </div>
-        <span className="content_title text-preset-3 ">Beyond Earth</span>
+        <span className="content_title">Beyond Earth</span>
       </div>
     </div>
   );
