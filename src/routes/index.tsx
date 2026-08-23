@@ -15,11 +15,21 @@ export const router = createBrowserRouter([
     path: '/',
     children: [
       {
+        element: <AuthLayout />,
+        children: [
+          { index: true, element: <Login /> },
+          {
+            path: 'signUp',
+            element: <SignUp />,
+          },
+        ],
+      },
+      {
         element: <BaseLayout />,
         children: [
           {
-            index: true,
             element: <HomePage />,
+            path: 'home',
           },
           {
             path: 'bookmarks',
@@ -32,20 +42,6 @@ export const router = createBrowserRouter([
           {
             path: 'series',
             element: <Series />,
-          },
-        ],
-      },
-      {
-        path: 'auth',
-        element: <AuthLayout />,
-        children: [
-          {
-            path: 'login',
-            element: <Login />,
-          },
-          {
-            path: 'signUp',
-            element: <SignUp />,
           },
         ],
       },

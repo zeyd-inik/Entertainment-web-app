@@ -1,0 +1,87 @@
+@scope (.UserForm) {
+  background-color: var(--color-blue-900);
+  border-radius: 6px;
+  padding: 29px 24px;
+  min-width: 327px;
+  min-height: 365px;
+  :scope {
+    .title {
+      font-family: var(--font-family-base);
+      font-size: 32px;
+      font-weight: var(--font-weight-light);
+      line-height: var(--line-height-base);
+      letter-spacing: -0.5px;
+      color: var(--color-white);
+      padding-bottom: var(--spacing-300);
+    }
+    input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-bottom: 1px var(--color-blue-500) solid;
+      width: 100%;
+      padding: var(--spacing-200);
+      caret-color: var(--color-red-500);
+      color: var(--color-white);
+
+      &::placeholder {
+        color: var(--color-white);
+        opacity: 0.5;
+
+        font-family: var(--font-family-base);
+        font-size: 15px;
+        font-weight: var(--font-weight-light);
+        line-height: var(--line-height-base);
+        letter-spacing: 0px;
+      }
+      &:focus {
+        border-bottom-color: var(--color-white);
+        &::placeholder {
+          color: transparent;
+        }
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .submit {
+      background-color: var(--color-red-500);
+      color: var(--color-white);
+      padding: 14.5px;
+      width: 100%;
+      border-radius: 6px;
+      margin-top: 40px;
+      display: block;
+      text-align: center;
+
+      font-family: var(--font-family-base);
+      font-size: 15px;
+      font-weight: var(--font-weight-light);
+      line-height: var(--line-height-base);
+      letter-spacing: 0px;
+      transition: all 0.3s ease;
+      &:hover {
+        cursor: pointer;
+        background-color: var(--color-white);
+        color: var(--color-blue-900);
+      }
+    }
+    .bottom {
+      text-align: center;
+      margin-top: var(--spacing-300);
+
+      font-family: var(--font-family-base);
+      font-size: 15px;
+      font-weight: var(--font-weight-light);
+      line-height: var(--line-height-base);
+      letter-spacing: 0px;
+      .text {
+        color: var(--color-white);
+        padding-right: var(--spacing-100);
+      }
+      .link {
+        color: var(--color-red-500);
+      }
+    }
+  }
+}

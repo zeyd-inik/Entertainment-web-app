@@ -58,3 +58,107 @@
      Desktop: 1440px+
      ---------------------------------------- */
 }
+
+/* ==========================================
+   TYPOGRAPHY PRESETS (DESKTOP / BASE)
+   ========================================== */
+
+.text-preset-1 {
+  font-family: var(--font-family-base);
+  font-size: 32px;
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-base);
+  letter-spacing: -0.5px;
+}
+
+.text-preset-2-medium {
+  font-family: var(--font-family-base);
+  font-size: 24px;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-base);
+  letter-spacing: 0px;
+}
+
+.text-preset-2-light {
+  font-family: var(--font-family-base);
+  font-size: 24px;
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-base);
+  letter-spacing: 0px;
+}
+
+.text-preset-3 {
+  font-family: var(--font-family-base);
+  font-size: 18px;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-base);
+  letter-spacing: 0px;
+}
+
+.text-preset-4 {
+  font-family: var(--font-family-base);
+  font-size: 15px;
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-base);
+  letter-spacing: 0px;
+}
+
+.text-preset-5 {
+  font-family: var(--font-family-base);
+  font-size: 13px;
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-base);
+  letter-spacing: 0px;
+}
+
+/* ==========================================
+   TYPOGRAPHY PRESETS (MOBILE HELPER CLASSES)
+   ========================================== */
+
+.text-preset-1-mobile {
+  font-family: var(--font-family-base);
+  font-size: 20px;
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-base);
+  letter-spacing: -0.3px;
+}
+
+.text-preset-2-mobile {
+  font-family: var(--font-family-base);
+  font-size: 16px;
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-base);
+  letter-spacing: 0px;
+}
+
+.text-preset-3-mobile {
+  font-family: var(--font-family-base);
+  font-size: 15px;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-base);
+  letter-spacing: 0px;
+}
+
+.text-preset-4-mobile {
+  font-family: var(--font-family-base);
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-base);
+  letter-spacing: 0px;
+}
+
+.text-preset-5-mobile {
+  font-family: var(--font-family-base);
+  font-size: 12px;
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-base);
+  letter-spacing: 0px;
+}
+
+.text-preset-6-mobile {
+  font-family: var(--font-family-base);
+  font-size: 11px;
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-base);
+  letter-spacing: 0px;
+}

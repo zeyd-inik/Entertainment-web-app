@@ -16,5 +16,9 @@
     @media (min-width: 1440px) {
       padding: var(--spacing-700);
     }
+
+    img {
+      margin-bottom: var(--spacing-700);
+    }
   }
 }

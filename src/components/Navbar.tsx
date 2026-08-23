@@ -8,10 +8,7 @@ import { NavLink } from 'react-router';
 export default function Navbar() {
   return (
     <nav className="Navbar">
-      <NavLink
-        to="/"
-        end
-      >
+      <NavLink to="/home">
         {({ isActive }) => {
           return (
             <PiSquaresFourFill className={isActive ? 'icon active' : 'icon'} />
