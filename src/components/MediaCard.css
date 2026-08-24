@@ -5,7 +5,7 @@
   padding-bottom: 14px;
   padding-left: 16px;
   border-radius: 5px;
-  background-image: url(../assets/thumbnails/112/regular/small.jpg);
+  background-image: var(--small);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -23,12 +23,14 @@
     padding-bottom: 28px;
     padding-left: 32px;
     border-radius: 8px;
+    background-image: var(--large);
   }
 
   @media (min-width: 1440px) {
     width: 560px;
     min-width: 560px;
     height: 320px;
+    background-image: var(--large);
   }
 
   &::before {
