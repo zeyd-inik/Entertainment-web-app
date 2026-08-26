@@ -1,7 +1,11 @@
 import './SearchBar.css';
 import { IoSearch } from 'react-icons/io5';
 
-export default function SearchBar() {
+type SearchBarProps = {
+  placeholder: string;
+};
+
+export default function SearchBar({ placeholder }: SearchBarProps) {
   return (
     <div className="SearchBar">
       <label htmlFor="text_input">
@@ -12,7 +16,7 @@ export default function SearchBar() {
         className="text_input "
         id="text_input"
         type="text"
-        placeholder="Search for movies or TV series"
+        placeholder={placeholder}
       />
     </div>
   );

@@ -3,7 +3,7 @@
 
   :scope {
     .thumbnail {
-      background-image: url(../assets/thumbnails/1998/regular/small.jpg);
+      background-image: var(--sm);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -35,11 +35,16 @@
         border-radius: inherit;
         pointer-events: none;
       }
-
+      @media (min-width: 768px) {
+        background-image: var(--md);
+      }
       @media (min-width: 1440px) {
         border-radius: 8px;
+        background-image: var(--lg);
       }
     }
+
+  }
 
     .play_button {
       display: flex;

@@ -1,26 +1,27 @@
 import GridCard from './GridCard';
 import './MediaGrid.css';
 
-export default function MediaGrid() {
+import type { ContentData } from '../types';
+
+type MediaGridProps = {
+  title: string;
+  contents: ContentData;
+};
+
+export default function MediaGrid({ title, contents }: MediaGridProps) {
   return (
     <div className="MediaGrid">
-      <h2 className="title">Recommended for you</h2>
+      {contents.length > 0 && <h2 className="title">{title}</h2>}
+
       <div className="grid_container">
-        <GridCard />
-        <GridCard />
-        <GridCard />
-        <GridCard />
-        <GridCard />
-        <GridCard />
-        <GridCard />
-        <GridCard />
-        <GridCard />
-        <GridCard />
-        <GridCard />
-        <GridCard />
-        <GridCard />
-        <GridCard />
-        <GridCard />
+        {contents.map((item) => {
+          return (
+            <GridCard
+              key={item.title}
+              item={item}
+            />
+          );
+        })}
       </div>
     </div>
   );

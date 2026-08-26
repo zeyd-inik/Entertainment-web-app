@@ -1,14 +1,18 @@
 import './MediaCard.css';
-import { FaRegBookmark } from 'react-icons/fa';
+import { FaBookmark, FaRegBookmark } from 'react-icons/fa';
 import { TbMovie } from 'react-icons/tb';
 import PlayIcon from '../assets/icon-play.svg';
 import type { ContentItem } from '../types';
+import { useAppDispatch } from '../store/hooks';
+import { toggleBookmark } from '../store/contentSlice';
 
 type MediaCardProps = {
   item: ContentItem;
 };
 
 export default function MediaCard({ item }: MediaCardProps) {
+  const isBookmarked = item.isBookmarked;
+  const dispatch = useAppDispatch();
   const small = item?.thumbnail?.trending?.small.replace('./assets/', '/');
   const large = item?.thumbnail?.trending?.large.replace('./assets/', '/');
   return (
@@ -28,8 +32,17 @@ export default function MediaCard({ item }: MediaCardProps) {
         />
         <span>Play</span>
       </div>
-      <i className="bookmark">
-        <FaRegBookmark className="icon" />
+      <i
+        className="bookmark"
+        onClick={() => {
+          dispatch(toggleBookmark(item.title));
+        }}
+      >
+        {isBookmarked ? (
+          <FaBookmark className="icon" />
+        ) : (
+          <FaRegBookmark className="icon" />
+        )}
       </i>
       <div className="info">
         <div className="top">

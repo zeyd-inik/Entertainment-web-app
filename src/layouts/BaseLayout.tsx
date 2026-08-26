@@ -8,7 +8,6 @@ export default function BaseLayout() {
     <div className="BaseLayout">
       <Header />
       <main>
-        <SearchBar />
         <Outlet />
       </main>
     </div>
